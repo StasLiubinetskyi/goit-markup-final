@@ -36,12 +36,14 @@ ul {
 }
 
 img {
+    display: block;
     max-width: 100%;
-        height: auto;
+    height: auto;
 }
 
 .list {
     list-style: none;
+    color: currentColor;
 }
 
 /* components */
