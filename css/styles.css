@@ -63,11 +63,25 @@ img {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+        max-width: 428px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 1px solid tomato;
 }
+ @media screen and (min-width: 768px) {
+     .container {
+         max-width: 768px;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+     .container {
+         max-width: 1158px;
+     }
+ }
+
 
 
 .menu-link.current {
@@ -123,8 +137,14 @@ img {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 .section-title {
@@ -202,10 +222,18 @@ img {
 
 .header-box {
     display: flex;
+    align-items: center;
 }
 
 .logo-header {
     color: var(--title-color);
+}
+
+@media screen and (max-width: 768px) {
+    .menu .team-list,
+    .contacts-box {
+        display: none;
+    }
 }
 
 /* menu */
@@ -414,26 +442,55 @@ img {
 /* footer */
 
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px; 
     background-color: var(--title-color);
 }
 
 .footer-box {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    
 }
+ @media screen and (min-width: 768px) {
+     .footer-box {
+        max-width: 768px;
+        justify-content: center;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+     .footer-box {
+        max-width: 1200px;
+        flex-direction: row;
+        
+     }
+ }
+
+
 
 .logo-footer {
     color: var(--color-cloud);
 }
 
-.footer-text {
-    width: 264px;
-    margin-top: 16px;
+.features-list-text {
+    font-weight: 500;
+    line-height: calc(24/16);
+}
 
-    color: var(--color-cornflower);
-    line-height: 1.5;
+@media screen and (max-width: 768px) {
+    .features-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .features-list-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40/36);
+    }
 }
 
 .footer-desc {
