@@ -169,8 +169,6 @@
                 d="M24 0 0 11.25l7.67 2.367L19.5 4.375l-8.998 10.116.007.003-.009-.003V20l4.301-4.182 5.45 1.682L24 0Z" />
         </symbol>
         <!-- burger icon -->
-
-
         <symbol id="icon-burger" width="32" height="22" fill="none">
             <g clip-path="url(#a)">
                 <path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
