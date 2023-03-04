@@ -1240,7 +1240,7 @@ img {
 /* tablet */
 
 @media screen and (min-width: 768px) {
-    .logo.footer-desc {
+        .logo.footer-desc {
         text-align: start;
     }
 
@@ -1248,8 +1248,7 @@ img {
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
-        justify-content: center
-    }
+            }
 
     .footer-desc {
         max-width: 264px;
